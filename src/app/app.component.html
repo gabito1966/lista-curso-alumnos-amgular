@@ -1,6 +1,10 @@
-<div class="container mt-5">
+<div class="container m-5">
   <app-tabla-alumnos *ngIf="!cursos"></app-tabla-alumnos>
   <app-tabla-cursos *ngIf="cursos"></app-tabla-cursos>
 
-  <button class="btn btn-outline-success" (click)="handleCambio()">Cambiar tabla</button>
+  <div class="d-grid gap-2 col-6 mx-auto">
+    <button class="btn btn-outline-dark" (click)="handleCambio()">
+      Cambiar tabla
+    </button>
+  </div>
 </div>
